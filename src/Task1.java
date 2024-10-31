@@ -24,7 +24,7 @@ class Product {
 }
 
 class Toy extends Product {
-    private String type;
+    public String type;
 
     public Toy(String name, double price, String type) {
         super(name, price);
@@ -39,7 +39,7 @@ class Toy extends Product {
 }
 
 class Food extends Product {
-    private String category;
+    public String category;
 
     public Food(String name, double price, String category) {
         super(name, price);
@@ -54,7 +54,7 @@ class Food extends Product {
 }
 
 class DairyProduct extends Food {
-    private String volume;
+    public String volume;
 
     public DairyProduct(String name, double price, String category, String volume) {
         super(name, price, category);
